@@ -1,11 +1,29 @@
 /*■■■■■■■■■■■■■■■■■■■ Declarations */
+
+%flex-center{
+    display: flex; align-items: center; justify-content: center;
+}
+
 /*■■■■■■■■■■■■■■■■■■■ Core */
 
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
-body{background: #222; color: #fff;}
+body{background: #222; color: #fff; height: 100vh; @extend %flex-center;}
 
 /*■■■■■■■■■■■■■■■■■■■ Initial */
+
+.board{
+    background: #ccc; width: 100vmin; height: 100vmin; display: grid; grid-template-columns: repeat(21, 1fr); grid-template-rows: repeat(21, 1fr);
+}
+
+.snake{
+    background: #00a6ed; border: 0.1vmin solid #222;
+}
+
+.food{
+    background: #ffbd00; border: 0.1vmin solid #222;
+}
+
 /*■■■■■■■■■■■■■■■■■■■  */
 /*■■■■■■■■■■■■■■■■■■■  */
 /*■■■■■■■■■■■■■■■■■■■  */
